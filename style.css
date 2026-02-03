@@ -100,8 +100,10 @@ a {
   max-width: 600px;
 }
 .hero-content h1 {
-  font-size: 1.8rem;
-  color: red;
+  font-size: 3rem;
+  background: linear-gradient(145deg, red, deeppink, blue, purple);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hero-content p {
   font-size: 1.1rem;
@@ -128,5 +130,55 @@ a {
   color: #fff;
 }
 .hero-content button:hover {
+  color: white;
+}
+
+/* About Section */
+
+.About-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw 3vw;
+  gap: 100px;
+}
+.about-heading {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3rem;
+  background: linear-gradient(145deg, red, deeppink, blue, purple);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.travel-img img {
+  width: 600px;
+  border-radius: 10px;
+}
+.travel-about {
+  max-width: 40%;
+}
+.travel-about h1 {
+  font-size: 2.3rem;
+}
+.travel-about p {
+  font-size: 1.1rem;
+  margin-top: 16px;
+  line-height: 28px;
+}
+.travel-about button {
+  padding: 12px 30px;
+  position: relative;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 3px 3px 6px white;
+  background: white;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0 0 4px 3px #0000004c;
+}
+
+.travel-about button:hover {
+  background-color: black;
   color: white;
 }

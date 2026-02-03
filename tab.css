@@ -96,15 +96,38 @@
     max-width: 70%;
   }
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.7rem;
     color: red;
   }
   .hero-content p {
     font-size: 1.5rem;
     line-height: 35px;
+    margin-top: 10px;
   }
   .hero-content button {
     padding: 15px 40px;
     font-size: 1.7rem;
+  }
+
+  /* About section */
+  .About-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 3vw;
+    gap: 40px;
+  }
+  .travel-img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .travel-about {
+    max-width: 90%;
+  }
+  .travel-about p {
+    font-size: 1.5rem;
+    margin-top: 16px;
+    line-height: 32px;
   }
 }
