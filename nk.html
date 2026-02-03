@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Dropdown</title>
+
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Navbar */
+      nav {
+        background: #222;
+        padding: 10px 20px;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .menu {
+        display: flex;
+        gap: 20px;
+      }
+
+      .menu a {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 12px;
+        display: block;
+      }
+
+      /* Dropdown */
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #333;
+        min-width: 150px;
+      }
+
+      .dropdown-menu a {
+        padding: 10px;
+      }
+
+      /* Show dropdown on hover (desktop) */
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      /* Mobile menu button */
+      .menu-btn {
+        display: none;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .btn {
+        padding: 10px 30px;
+        border: none;
+        outline: none;
+        background: beige;
+        border-radius: 50px;
+        color: black;
+        margin: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 105%;
+        height: 110%;
+        background: linear-gradient(145deg, red, purple);
+        border-radius: 50px;
+        z-index: -1;
+      }
+      /* Responsive (mobile) */
+      @media (max-width: 768px) {
+        .menu-btn {
+          display: block;
+        }
+
+        .menu {
+          display: none;
+          flex-direction: column;
+          margin-top: 10px;
+        }
+
+        .menu-btn:hover + .menu,
+        .menu:hover {
+          display: flex;
+        }
+
+        .dropdown-menu {
+          position: static;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-btn">☰ Menu</div>
+
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Development</a></li>
+            <li><a href="#">SEO</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="btn">Click</button>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SN Pro", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.8em 1.4em;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 40px;
+}
+.logo h1 {
+  font-size: 2rem;
+}
+#MenuIcon {
+  display: none;
+}
+.mobile-logo {
+  display: none;
+}
+#navClose {
+  display: none;
+}
+.navLinks {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.navLinks a {
+  font-size: 1.3rem;
+}
+.dropdown-menu {
+  position: relative;
+}
+.dropdown {
+  list-style: none;
+  display: none;
+  position: absolute;
+}
+.dropdown li {
+  padding: 6px;
+}
+.dropdown-menu:hover .dropdown {
+  display: block;
+}
+.sign-btn {
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  border: 1px solid black;
+  background: transparent;
+  border-radius: 40px;
+  transition: background 0.5s ease-in-out;
+}
+.sign-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Hero section */
+.Hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero-img img {
+  width: 800px;
+}
+.hero-content {
+  max-width: 600px;
+}
+.hero-content h1 {
+  font-size: 1.8rem;
+  color: red;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 28px;
+}
+
+.hero-content button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 40px;
+  border: 2px solid purple;
+  background: linear-gradient(to left, transparent 50%, purple 50%);
+  background-size: 200% 100%;
+  background-position: right bottom; /* fully transparent */
+  color: purple;
+  cursor: pointer;
+  transition:
+    background-position 0.4s ease,
+    color 0.4s ease;
+  margin-top: 30px;
+}
+.hero-content button:hover {
+  background-position: left bottom; /* slide in */
+  color: #fff;
+}
+.hero-content button:hover {
+  color: white;
+}
