@@ -130,4 +130,19 @@
     margin-top: 16px;
     line-height: 32px;
   }
+
+  /* Popular destinations images */
+  .destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .locations {
+    width: 34%;
+    height: 280px;
+    box-shadow: 0 0 4px 4px #80808070;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 }

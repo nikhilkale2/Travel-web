@@ -113,4 +113,32 @@
   .travel-about h1 {
     font-size: 2.3rem;
   }
+
+  /* Popular destinations */
+  .destination-section {
+    margin-top: 40px;
+  }
+  .dest-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .dest-header h1 {
+    font-size: 2.2rem;
+  }
+  .dest-header p {
+    font-size: 1.1rem;
+  }
+  .destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .locations {
+    width: 90%;
+    height: 280px;
+    box-shadow: 0 0 4px 4px white;
+    border-radius: 10px;
+  }
 }
