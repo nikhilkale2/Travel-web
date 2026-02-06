@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!--Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -302,25 +303,57 @@
     </section>
 
     <!-- Booking form -->
-    <section>
+    <section id="TravelBooking">
+      <div id="Booking-head">
+        <h1 class="">Book Now Your Trip</h1>
+        <p>Book now your trip with Skywings.com</p>
+      </div>
       <div class="booking-section">
         <div class="booking-img">
           <img src="images/hero-bg.jpg" alt="" />
         </div>
         <form action="" id="BookingForm">
           <div class="group-input">
-            <div class="input-group1">
-              <label for="inputFrom">From:</label>
-              <input
-                type="text"
-                placeholder="From (e.g. Latur)"
-                id="inputFrom"
-              />
-            </div>
-            <div class="input-group1">
-              <label for="inputTo">To:</label>
-              <input type="text" placeholder="To (e.g: Pune)" id="inputTo" />
-            </div>
+            <select id="" class="inputFrom">
+              <option value="From (e.g. Latur)">From (e.g. Pune)</option>
+              <option value="">Mumbai</option>
+              <option value="">Pune</option>
+              <option value="">Goa</option>
+              <option value="">Jaypur</option>
+              <option value="">Delhi</option>
+              <option value="">Manali</option>
+              <option value="">Mahabaleshwar</option>
+              <option value="">kerala</option>
+              <option value="">Hydrabad</option>
+              <option value="">Banglore</option>
+              <option value="">Jaisalmer</option>
+              <option value="">Rishikesh</option>
+              <option value="">Varanasi</option>
+              <option value="">Ujjain</option>
+              <option value="">Dharamshala</option>
+              <option value="">Chandigarh</option>
+              <option value="">Lonavala</option>
+            </select>
+            <select id="" class="inputTo">
+              <option value="From (e.g. Latur)">From (e.g. Pune)</option>
+              <option value="">Mumbai</option>
+              <option value="">Pune</option>
+              <option value="">Goa</option>
+              <option value="">Jaypur</option>
+              <option value="">Delhi</option>
+              <option value="">Manali</option>
+              <option value="">Mahabaleshwar</option>
+              <option value="">kerala</option>
+              <option value="">Hydrabad</option>
+              <option value="">Banglore</option>
+              <option value="">Jaisalmer</option>
+              <option value="">Rishikesh</option>
+              <option value="">Varanasi</option>
+              <option value="">Ujjain</option>
+              <option value="">Dharamshala</option>
+              <option value="">Chandigarh</option>
+              <option value="">Lonavala</option>
+            </select>
           </div>
           <div class="input-group1">
             <label for="inputDate">Date:</label>
@@ -359,6 +392,104 @@
       </div>
     </section>
 
+    <!-- Testimonals section-->
+    <section>
+      <div class="feedback-section">
+        <h1>Testimonals</h1>
+
+        <div class="swiper-review">
+          <div class="users">
+            <div class="user-img">
+              <img src="images/user-1.avif" alt="" />
+            </div>
+            <div class="user-review">
+              <h4>Amit Sharma</h4>
+              <p>
+                Amazing experience with smooth booking and well-planned trips
+              </p>
+            </div>
+          </div>
+          <div class="users">
+            <div class="user-img">
+              <img src="images/user-1.avif" alt="" />
+            </div>
+            <div class="user-review">
+              <h4>Amit Sharma</h4>
+              <p>
+                Amazing experience with smooth booking and well-planned trips
+              </p>
+            </div>
+          </div>
+          <div class="users">
+            <div class="user-img">
+              <img src="images/user-1.avif" alt="" />
+            </div>
+            <div class="user-review">
+              <h4>Amit Sharma</h4>
+              <p>
+                Amazing experience with smooth booking and well-planned trips
+              </p>
+            </div>
+          </div>
+          <div class="users">
+            <div class="user-img">
+              <img src="images/user-1.avif" alt="" />
+            </div>
+            <div class="user-review">
+              <h4>Amit Sharma</h4>
+              <p>
+                Amazing experience with smooth booking and well-planned trips
+              </p>
+            </div>
+          </div>
+          <div class="users">
+            <div class="user-img">
+              <img src="images/user-1.avif" alt="" />
+            </div>
+            <div class="user-review">
+              <h4>Amit Sharma</h4>
+              <p>
+                Amazing experience with smooth booking and well-planned trips
+              </p>
+            </div>
+          </div>
+          <div class="users">
+            <div class="user-img">
+              <img src="images/user-1.avif" alt="" />
+            </div>
+            <div class="user-review">
+              <h4>Amit Sharma</h4>
+              <p>
+                Amazing experience with smooth booking and well-planned trips
+              </p>
+            </div>
+          </div>
+          <div class="users">
+            <div class="user-img">
+              <img src="images/user-1.avif" alt="" />
+            </div>
+            <div class="user-review">
+              <h4>Amit Sharma</h4>
+              <p>
+                Amazing experience with smooth booking and well-planned trips
+              </p>
+            </div>
+          </div>
+          <div class="users">
+            <div class="user-img">
+              <img src="images/user-1.avif" alt="" />
+            </div>
+            <div class="user-review">
+              <h4>Amit Sharma</h4>
+              <p>
+                Amazing experience with smooth booking and well-planned trips
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CDN -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
@@ -372,6 +503,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
     <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
     <script src="script.js"></script>
   </body>

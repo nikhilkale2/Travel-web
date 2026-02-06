@@ -26,6 +26,7 @@ a {
   top: 0;
   left: 0;
   padding: 0.8em 1.4em;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 .logo a {
   display: flex;
@@ -348,9 +349,21 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+#Booking-head {
+  text-align: center;
   margin-top: 80px;
 }
-
+#Booking-head h1 {
+  font-family: "Akaya Kanadaka", system-ui;
+  font-size: 2.8rem;
+  background: linear-gradient(to bottom, red, deeppink, darkblue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#Booking-head p {
+  font-size: 1.2rem;
+}
 .booking-img {
   width: 50%;
   height: 500px;
@@ -370,6 +383,7 @@ a {
   flex-direction: column;
   gap: 12px;
   width: 30%;
+  padding: 20px;
 }
 #BookingForm .inputs {
   width: 350px;
@@ -385,8 +399,8 @@ a {
   display: flex;
   gap: 20px;
 }
-.group-input input {
-  width: 160px;
+.group-input select {
+  width: 165px;
   height: 40px;
   border: none;
   border-radius: 5px;
@@ -404,4 +418,32 @@ a {
   border: none;
   border-radius: 5px;
   background-color: aqua;
+}
+
+/* User profile image */
+
+.swiper-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 1rem 6rem;
+  overflow-x: scroll;
+}
+.users {
+  width: 300px;
+  flex-shrink: 1;
+}
+.user-review {
+  max-width: 90%;
+  text-align: center;
+}
+.user-img img {
+  width: 240px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }

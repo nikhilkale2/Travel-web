@@ -41,3 +41,15 @@ mm.add("(max-width:1024px)", () => {
     // Hero section
   });
 });
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 5,
+  loop: true,
+  spaceBetween: 20,
+  grapCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    addIcons: true,
+  },
+});
