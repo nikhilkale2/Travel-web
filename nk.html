@@ -3,162 +3,180 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skywings – Premium Package</title>
+    <title>Hero Swiper Slider</title>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
+        font-family: Arial, sans-serif;
       }
 
       body {
-        min-height: 100vh;
-        background: #f2f5f9;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background: #f5f7fb;
       }
 
-      /* Card */
-      .package-card {
-        width: 340px;
-        background: #fff;
-        border-radius: 18px;
-        overflow: hidden;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-        transition: all 0.4s ease;
-      }
-
-      .package-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
-      }
-
-      /* Image */
-      .package-img {
-        position: relative;
-      }
-
-      .package-img img {
+      section {
         width: 100%;
-        height: 220px;
-        object-fit: cover;
       }
 
-      /* Badge */
-      .badge {
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        background: linear-gradient(to right, #ff0088, #3c00ff);
-        color: #fff;
-        font-size: 12px;
-        padding: 6px 14px;
-        border-radius: 20px;
+      .swiper {
+        width: 100%;
+        height: 100vh;
       }
 
-      /* Content */
-      .package-content {
-        padding: 20px;
-      }
-
-      .package-title {
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 6px;
-      }
-
-      .package-duration {
-        font-size: 14px;
-        color: #777;
-        margin-bottom: 12px;
-      }
-
-      .package-desc {
-        font-size: 14px;
-        line-height: 1.6;
-        color: #555;
-        margin-bottom: 16px;
-      }
-
-      /* Features */
-      .features {
-        display: flex;
-        justify-content: space-between;
-        font-size: 13px;
-        color: #666;
-        margin-bottom: 16px;
-      }
-
-      /* Footer */
-      .package-footer {
+      .swiper-slide {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 80px 8%;
+        background: linear-gradient(135deg, #e3f2fd, #ffffff);
       }
 
-      .price {
-        font-size: 18px;
-        font-weight: 600;
-        color: #3c00ff;
+      .hero-content {
+        width: 50%;
       }
 
-      .btn {
-        padding: 10px 22px;
-        border-radius: 30px;
-        background: linear-gradient(to right, #ff0088, #3c00ff);
+      .hero-content h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+        color: #555;
+      }
+
+      .hero-content button {
+        padding: 12px 25px;
+        background: #007bff;
+        border: none;
         color: #fff;
-        font-size: 14px;
-        text-decoration: none;
-        transition:
-          transform 0.3s ease,
-          box-shadow 0.3s ease;
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
       }
 
-      .btn:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      .hero-content button:hover {
+        background: #0056b3;
       }
 
-      .anim-txt {
-        min-width: 500px;
+      .swiper-slide img {
+        width: 40%;
+        max-width: 500px;
+      }
+
+      /* Navigation Color */
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #007bff;
+      }
+
+      /* Responsive */
+      @media (max-width: 992px) {
+        .swiper-slide {
+          flex-direction: column;
+          text-align: center;
+        }
+        .hero-content {
+          width: 100%;
+        }
+        .swiper-slide img {
+          width: 80%;
+          margin-top: 30px;
+        }
       }
     </style>
   </head>
+
   <body>
-    <div class="package-card">
-      <div class="package-img">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
-          alt="Goa Beach"
-        />
-        <span class="badge">Best Seller</span>
-      </div>
+    <section>
+      <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero-content">
+              <h1>Let’s Plan Your Next Trip</h1>
+              <p>
+                Explore beautiful destinations with trusted services and smooth
+                travel experiences.
+              </p>
+              <button>Explore More</button>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+              alt=""
+            />
+          </div>
 
-      <div class="package-content">
-        <h3 class="package-title">Goa Beach Escape</h3>
-        <p class="package-duration">5 Days / 4 Nights</p>
+          <div class="swiper-slide">
+            <div class="hero-content">
+              <h1>Discover Amazing Places</h1>
+              <p>
+                Comfortable stays, flexible packages and stress-free travel
+                planning.
+              </p>
+              <button>Explore More</button>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1493558103817-58b2924bce98"
+              alt=""
+            />
+          </div>
 
-        <p class="package-desc">
-          Enjoy sun-soaked beaches, vibrant nightlife, and a relaxing stay in
-          Goa’s most popular locations.
-        </p>
-
-        <div class="features">
-          <span>🏨 Hotel</span>
-          <span>🚗 Transfer</span>
-          <span>🍽️ Meals</span>
+          <div class="swiper-slide">
+            <div class="hero-content">
+              <h1>Travel With Confidence</h1>
+              <p>
+                Secure booking and personalized tours for unforgettable
+                journeys.
+              </p>
+              <button>Explore More</button>
+            </div>
+            <img
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+              alt=""
+            />
+          </div>
         </div>
 
-        <div class="package-footer">
-          <span class="price">₹24,999</span>
-          <a href="#" class="btn">View Details</a>
-        </div>
-      </div>
-    </div>
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
-    <div class="anim-txt">Hi I'am a <span></span></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".heroSwiper", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

@@ -147,36 +147,28 @@
   }
 
   /* Booking section */
-  .booking-section {
+  .Booking-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
     align-items: center;
+    padding: 20px 12px;
+  }
+  .Booking-section img {
+    width: 90%;
+    height: auto;
+  }
+  .Booking-section input {
     width: 100%;
-  }
-  .booking-img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-  }
-  #BookingForm {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50%;
-    gap: 12px;
-    width: 100%;
-    padding: 20px;
-  }
-  #BookingForm .inputs {
-    width: 50%;
     height: 40px;
-  }
-  .group-input select {
-    width: 24%;
-    height: 40px;
-  }
-  #BookingForm button {
-    width: 50%;
-    height: 40px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px 2px #808080bb;
+    padding: 0 5px;
+    font-size: 18px;
+    background-color: white;
   }
 }

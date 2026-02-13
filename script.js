@@ -43,13 +43,46 @@ mm.add("(max-width:1024px)", () => {
 });
 
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 5,
+  slidesPerView: 3,
+  spaceBetween: 25,
   loop: true,
-  spaceBetween: 20,
   grapCursor: true,
+  loopFillGroupWithBlank: false,
+  centeredSlides: false,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
     addIcons: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper1 = new Swiper(".swiper1", {
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });

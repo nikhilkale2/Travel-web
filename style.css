@@ -27,6 +27,7 @@ a {
   left: 0;
   padding: 0.8em 1.4em;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
+  z-index: 100;
 }
 .logo a {
   display: flex;
@@ -124,7 +125,7 @@ a {
   border: 2px solid purple;
   background: linear-gradient(to left, transparent 50%, purple 50%);
   background-size: 200% 100%;
-  background-position: right bottom; /* fully transparent */
+  background-position: right bottom;
   color: purple;
   cursor: pointer;
   transition:
@@ -133,7 +134,7 @@ a {
   margin-top: 30px;
 }
 .hero-content button:hover {
-  background-position: left bottom; /* slide in */
+  background-position: left bottom;
   color: #fff;
 }
 .hero-content button:hover {
@@ -344,106 +345,163 @@ a {
 }
 
 /* Booking Form */
-
-.booking-section {
+.booking-head {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: 80px 0 10px 0;
 }
-#Booking-head {
-  text-align: center;
-  margin-top: 80px;
-}
-#Booking-head h1 {
+.booking-head h1 {
   font-family: "Akaya Kanadaka", system-ui;
   font-size: 2.8rem;
   background: linear-gradient(to bottom, red, deeppink, darkblue);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#Booking-head p {
-  font-size: 1.2rem;
+.Booking-section {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  align-items: center;
 }
-.booking-img {
-  width: 50%;
-  height: 500px;
-  object-fit: cover;
+.Booking-section img {
+  width: 700px;
+  height: auto;
 }
-
-.booking-img img {
-  width: 100%;
-  height: 100%;
-}
-.input-group1 {
+.input-group,
+.group-input {
   display: flex;
   flex-direction: column;
+  gap: 2px;
 }
-#BookingForm {
+.input-select {
+  display: flex;
+  gap: 10px;
+}
+
+#TripbookingForm {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 30%;
-  padding: 20px;
 }
-#BookingForm .inputs {
-  width: 350px;
+
+.Booking-section input {
   height: 40px;
-  padding: 0 12px;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
-  font-size: 17px;
-  background-color: #1e8fff60;
-  color: black;
+  outline: none;
+  box-shadow: 0 0 5px 2px #808080bb;
+  padding: 0 5px;
+  font-size: 18px;
+  background-color: white;
 }
-.group-input {
-  display: flex;
-  gap: 20px;
-}
-.group-input select {
-  width: 165px;
+.Booking-section button {
   height: 40px;
-  border: none;
-  border-radius: 5px;
-  padding: 0 12px;
-  background-color: #1e8fff60;
-  color: black;
-  font-weight: 500;
-  font-size: 17px;
-}
-#BookingForm button {
-  width: 350px;
-  height: 40px;
-  margin-top: 10px;
   font-size: 18px;
   border: none;
-  border-radius: 5px;
-  background-color: aqua;
+  border-radius: 10px;
+  background-color: dodgerblue;
+  color: white;
 }
-
 /* User profile image */
-
-.swiper-review {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  padding: 1rem 6rem;
-  overflow-x: scroll;
-}
-.users {
-  width: 300px;
-  flex-shrink: 1;
-}
-.user-review {
-  max-width: 90%;
+.review-section {
   text-align: center;
+  margin-top: 50px;
+  z-index: -2;
+}
+.review-section h1 {
+  font-family: "Akaya Kanadaka", system-ui;
+  font-size: 2.8rem;
+  background: linear-gradient(to bottom, red, deeppink, darkblue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+.review-wrapper {
+  padding: 12px;
+}
+.review-slide {
+  width: 200px;
+  box-shadow: 0 0 5px 2px gray;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
 }
 .user-img img {
-  width: 240px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+}
+
+/* ========== Contact Us section ========== */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 40px;
+}
+.contact-form input {
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 6px 2px #8080807e;
+}
+.contact-form button {
+  background-color: dodgerblue;
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 6px 2px #8080807e;
+}
+.contact-form textarea {
+  height: 100px;
+  width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px #8080807e;
+  border: none;
+  outline: none;
+}
+
+/* ========== Footer section ========== */
+.footer-container {
+  background-color: black;
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+}
+.footer-section {
+  margin-top: 50px;
+}
+.footer-section h4,
+.footer-section h3 {
+  margin-bottom: 8px;
+}
+.footer-section ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.footer-section ul li a {
+  color: white;
 }
