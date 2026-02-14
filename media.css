@@ -240,4 +240,52 @@
   .footer-section h3 {
     font-size: 25px;
   }
+
+  /* ========= Hero page section ========== */
+  .goa-hero-page {
+    margin-top: 67px;
+  }
+  .goa-hero-page img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .goa-hero-page h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+  }
+  .goa-hero-page button {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    font-size: 1.2rem;
+    border: 2px solid black;
+  }
+
+  /* ============ Goa About page section ========== */
+  .goa-about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
+  .goa-about-content h2 {
+    font-size: 2.2rem;
+  }
+  .goa-about-content p {
+    margin-top: 16px;
+    line-height: 23px;
+    max-width: 100%;
+  }
+  .goa-about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 3px gray;
+    object-fit: cover;
+    margin-top: 50px;
+  }
 }

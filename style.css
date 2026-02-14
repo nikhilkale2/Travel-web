@@ -505,3 +505,108 @@ a {
 .footer-section ul li a {
   color: white;
 }
+
+/* ========= Hero page section ========== */
+.goa-hero-page img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.goa-hero-page h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  color: white;
+  white-space: nowrap;
+}
+.goa-hero-page button {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 50px;
+  font-size: 1.3rem;
+  border: 2px solid black;
+  color: white;
+  border-radius: 4px;
+  background-color: black;
+  transition: background 0.6s ease-in-out;
+}
+.goa-hero-page button:hover {
+  background-color: transparent;
+}
+
+/* ============ Goa About page section ========== */
+.goa-about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-top: 50px;
+}
+.goa-about-content h2 {
+  font-size: 2rem;
+}
+.goa-about-content p {
+  margin-top: 16px;
+  line-height: 23px;
+  max-width: 80%;
+}
+.goa-about-content button {
+  margin-top: 14px;
+  width: 180px;
+  height: 45px;
+  font-size: 1.1rem;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  transition: background 0.4s ease-in-out;
+}
+.goa-about-content button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.goa-about-image img {
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 3px gray;
+  object-fit: cover;
+}
+.goa-destination-container {
+  width: 100%;
+}
+.goa-top-destination {
+  margin-top: 50px;
+}
+.goa-top-destination h3 {
+  text-align: center;
+}
+.goa-destinations {
+  width: 20%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 0 5px 3px gray;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.goa-destinations h5 {
+  font-size: 1.2rem;
+}
+.goa-destinations p {
+  font-size: 14px;
+  line-height: 17px;
+}
+.goa-destinations img {
+  width: 100%;
+  border-radius: 40px;
+}
